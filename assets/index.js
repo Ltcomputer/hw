@@ -24,7 +24,7 @@ $('.tab .menus li').each(function(){
             // var index = $(this).index();
           
             
-            $('.right').css('display','none');
+            // $('.right').css('display','none');
             // $('.tab').css('background-image','url('+arr[index]+')')// 背景图片  不需要注释即可
         })
     
