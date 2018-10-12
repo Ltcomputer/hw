@@ -19,19 +19,19 @@
                 <div class="titlebig">
                     <h4>vivo账号登录</h4>
                 </div>
-                <form class="registerForm" action="#">
-                    <label class="labelbox" for="">
-                        <input type="text" class="register-phone" id="" name="account" placeholder="请输入手机号">
+                <form id="registerForm" class="login-form" action="#" onsubmit="return false" autocomplete="off">
+                    <label class="labelbox" for="accountInput">
+                        <input type="text" class="account" name="username"  required="required" placeholder="手机号/邮箱/用户名">
                     </label>
-                    <div class="check-box">
-                        <div class="check-outer">
-                            <!-- <div class="checked"></div> -->
-                            <input class="checked" id="autoLogin" type="checkbox" />
+                    <label class="labelbox" for="passwordInput">
+                        <input class="password-field" name="password" required="required"type="password" placeholder="密码"
+                            autocomplete="off"> <input type="hidden" name="pwd">
+                    </label>
+                             <input class="checked" id="autoLogin" type="checkbox" />
                             <label class="text">我已阅读并接受《vivo服务协议》</label>
-                        </div>
-                    </div>
-                    <div class="next-btn">
-                        <a href="">下一步</a>
+                      
+                    <div class="submit-btn">
+                        <input type="submit" class="btn" name="login-btn" value="登录">  
                     </div>
                 </form>
             </div>
@@ -48,6 +48,13 @@
             RIGHTS RESERVED.粤ICP备05100288号
         </div>
     </div>
+    <script src="js/ajax.js"></script>
+    <!-- <script src="js/login.js"></script> -->
+    <script src="js/register.js"></script>
+    <script>
+        // login.init('.login-form');
+        register.init('.login-form');
+    </script>
 </body>
 
 </html>

@@ -27,40 +27,43 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 text-align: center;
 margin-bottom: 40px;
 }
-.registerForm{
+#registerForm{
     width: 332px;
-    height: 160px;
+    /* height: 160px; */
     margin: 0 auto;
+    /* background: #cccccc */
 }
-.register-phone{
-    width: 314px;
+.labelbox input{
+    width: 100%;
     height: 48px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* border: 0; */
+    text-indent:20px;
+}
+.account::placeholder{
     font-size: 16px;
-    outline: none;
-    padding-left: 16px;
+    color: #cccccc;
 }
-.check-box{
-    margin-top: 12px;
-    margin-bottom: 20px;
+.password-field::placeholder{
+    font-size: 16px;
+    color: #cccccc;
 }
-.check-box .text{
-    display: inline-block;
-    font-size: 13px;
-    color: #666666;
-    vertical-align: middle;
-    margin-left: 14px;
+.btn{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    color: #ffffff;
+    font-size: 22px;
+    background-color: #2899f7;
+    margin-top: 17px;
+    cursor: pointer;
 }
-.check-outer{
-  margin-top: 25px;
+checked{
+    width: 14px;
+    height: 14px;
 }
-.checked{
-    width: 15px;
-    height: 15px;
-    position: relative;
-    top: 2px;
-}
-
-.next-btn a{
+/* .next-btn a{
     display: block;
     width: 332px;
     height: 50px;
@@ -70,7 +73,7 @@ margin-bottom: 40px;
     color: #ffffff;
     outline: none;
     border: 1px solid #e1e1e1;
-}
+} */
 #n-footer{
     margin-top: 50px;
     height: 160px;
@@ -78,7 +81,6 @@ margin-bottom: 40px;
 }
 #n-footer ul{
     text-align: center;
-    /* background: red; */
     width: 100%;
     height: 19px;
     display: flex;
