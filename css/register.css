@@ -1,0 +1,122 @@
+*{margin: 0;padding: 0}
+body{background: #f7f7f7;}
+ul,li{list-style: none;}
+ a {
+    text-decoration: none;
+    outline: none;
+}
+ i,em{font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.wrap{
+    width: 900px;
+    height: 540px;
+    background: #ffffff;;
+    margin: 100px auto;
+    padding: 20px 0;
+}
+.log-area {
+    height: 68px;
+    text-align: center;
+    margin-top: 20px;
+}
+.log-area img{
+ width: 126px;
+ height: 38px;
+}
+.titlebig{
+text-align: center;
+margin-bottom: 40px;
+}
+.registerForm{
+    width: 332px;
+    height: 160px;
+    margin: 0 auto;
+}
+.register-phone{
+    width: 314px;
+    height: 48px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+}
+.check-box{
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.check-box .text{
+    display: inline-block;
+    font-size: 13px;
+    color: #666666;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+.check-outer{
+  margin-top: 25px;
+}
+.checked{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.next-btn a{
+    display: block;
+    width: 332px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #2899f7;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #e1e1e1;
+}
+#n-footer{
+    margin-top: 50px;
+    height: 160px;
+    
+}
+#n-footer ul{
+    text-align: center;
+    /* background: red; */
+    width: 100%;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+}
+#n-footer ul li{
+    float: left;
+    text-align: center;
+    line-height: 19px;
+}
+#n-footer ul li a{
+    color:#666666;
+    font-size: 12px;
+   
+}
+#n-footer ul li:nth-child(1) img{
+    width: 19px;
+    height: 16px;
+    vertical-align: middle;
+   line-height: 19px;
+    
+}
+#n-footer ul li:nth-child(2) img{
+    width: 12px;
+    height: 15px;
+    vertical-align: middle;
+   line-height: 19px;
+    
+}
+#n-footer ul li:nth-child(2){
+    padding-left: 50px;
+}
+.copyRight{
+    height: 44px;
+    font-size: 10px;
+    color: #9d9d9d;
+    text-align: center;
+    line-height: 44px;
+    letter-spacing: 1px;
+    /* margin-top: 17px; */
+}
