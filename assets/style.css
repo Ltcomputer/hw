@@ -57,8 +57,12 @@ ul {
     overflow: hidden;
     margin-left: 10px;
     border-radius: 10px;
-    display: none;
+    opacity: 0;
+    /* display: none; */
 }
+/* .tab .box .menus li:hover.right{
+    opacity: 1;
+} */
 .tab .tab_right {
     width: 950px;
     height: 484px;

@@ -252,9 +252,9 @@ header{
     background: #ffffff;
 }
 
-.category:hover li{
+/* .category:hover li{
     width: 200px;
-}
+} */
 
 /* .category:hover .category-box {
     display: block;
