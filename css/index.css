@@ -256,7 +256,7 @@ header{
     width: 200px;
 } */
 
-/* .category:hover .category-box {
+/* .category li:hover.right{
     display: block;
 } */
 .category-detail{
@@ -291,7 +291,7 @@ header{
     vertical-align: top;
     margin-bottom: 20px;
     width: 222px;
-    font-size: 0;
+    /* font-size: 0; */
 }
 .category-product li img{
     vertical-align: middle;
