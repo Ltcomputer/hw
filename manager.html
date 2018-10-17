@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    欢迎
+    <h2>欢迎</h2><a href="index.html">返回首页</a>
 </body>
+<!-- <body>
+    <h2 id="h2"></h2>
+    <script>
+        // http://localhost:8090/1807/day23/login.php?username=liutao&password=1234567
+      
+    var url = location.search.slice(1);
+   var h2 = document.getElementById('h2');
+    function getParames(url){
+        var obj = {};
+            url = url.split('&');
+            for(var i = 0; i < url.length; i++){
+                    var str = url[i].split('=');
+                    obj[str[0]] =str[1];
+            }
+            return obj;
+    }
+    url = getParames(url);
+    var username = url.username;
+    
+    h2.innerHTML ='欢迎' + username;
+    
+    </script>
+</body> -->
 </html>

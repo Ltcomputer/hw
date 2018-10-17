@@ -17,6 +17,7 @@ var login = (function(){
                 // 发送ajax，验证用户名和密码
                 var params = {
                     method: 'post',
+                    // method: 'get',
                     data: {
                         username: _this.$usernameInp.value,
                         password: _this.$passwordInp.value

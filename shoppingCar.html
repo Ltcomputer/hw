@@ -5,25 +5,26 @@
 <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>购物车</title>
-<link rel="stylesheet" href="//at.alicdn.com/t/font_864011_rls74ka56t.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_864011_xz3arhtumw.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/carts.css">
+ <!-- hover下拉菜单 -->
+ <link rel="stylesheet" href="css/submenu.css">
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <script src="js/submenu.js"></script>
 
 <style>
-    header{
+    /* header{
     width: 100%;
    height: 52px;
     background: #2f2f2f;
 }
 .header_con{
     width: 1200px;
-    /* background: #ccc; */
-    /* height: 44px; */
     margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
-    /* background: black; */
 }
 .vivo_logo{
    width: 230px;
@@ -32,8 +33,7 @@
     opacity: 1;
 }
 .vivo_logo a:hover{
-    opacity: 0.5;
-    
+    opacity: 0.5;  
 }
 .nav{
     width: 710px;
@@ -43,7 +43,6 @@
 }
 .nav li{
    float: left;
-
 }
 .nav li a:hover{
     color: #aaaaaa;
@@ -60,64 +59,51 @@
     opacity: 0.5;
 }
 .icon{
-    /* height: 20px; */
    color:#ffffff;
    position: absolute;
    top: 18px;
    right:0;
-   cursor: pointer;
-    
+   cursor: pointer;  
 }
 .yonghu{
     display: inline-block;
     margin-left: 85px;
-    /* overflow: hidden; */
     height: 20px;
 }
 .yonghu:hover{
-    /* width: 10px; */
     height: 200px;
-    /* background: red; */
 }
 .yonghu:hover .menuitem{
     z-index: 2;
 }
-
 .menuitem:hover{
     color: #aaaaaa;
 }
-
 .menuitem{
     background: red;
     position: absolute;
     left: -23px;
     top: 35px;
     z-index:-1;
-    /* display: none; */
 }
 .menuitem .submenu{
     background: #ffffff;
     line-height: 50px;
     text-align: center;
-
 }
-
 .submenu li{
     width: 160px;
     height: 50px;
-   
-    /* background: lightgreen; */
 }
 .submenu li a{
     color: black;
 }
 .submenu li:hover{
     background: #cccccc;
-}
+} */
 #shop_footer{
     height: 189px;
-    background: #ffffff;
-   
+    background: #ffffff;  
 }
 .shop-footer-area{
    width: 1200px;
@@ -278,7 +264,7 @@
 </style>
 </head>
 <body>
-        <header>
+        <!-- <header>
                 <div class="header_con">
                     <div class="vivo_logo"><a href=""> <img src="img/vivo.png" alt=""></a></div>
                     <ul class="nav">
@@ -308,8 +294,129 @@
                     </div>
         
                 </div>
-            </header>
-<section class="cartMain">
+            </header> -->
+
+
+            <div class="header">
+                    <div class="nav">
+                            <div class="vivo_logo"><a href=""> <img src="img/vivo.png" alt=""></a></div>
+                        <ul class="menu">
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer1">NEX系列</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer2">X系列</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer3">Z系列</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer4">Y系列</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer5">商城</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer6">专卖店</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer7">Funtouch </a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer7">服务</a>
+                            </li>
+                            <li class="li_2018">
+                                <a class="bind_menu_a" href="#" data-layerid="layer7">社区</a>
+                            </li>
+                        </ul>
+                        <div class="icon">
+                                <i class="iconfont iconfont-weibiaoti1psd"></i>
+                                <div class="yonghu">
+                                    <i class="iconfont iconfont-yonghu"></i>
+                                    <div class="menuitem">
+                                        <ul class="submenu">
+                                            <li><a href="shoppingCar.html"><i class="iconfont iconfont-g"></i> <span>购物车</span> </a> </li>
+                                            <li><a href=""><i class="iconfont iconfont-dingdan"></i><span>我的订单</span> </a> </li>
+                                            <li><a href="" ><i class="iconfont iconfont-wodeshangcheng"></i><span>我的商城</span> </a></li>
+                                            <li><a href="log.html"><i class="iconfont iconfont-yonghu"></i><span>登录/注册</span> </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                       
+                    </div>
+                    <div class="SUB_M">
+                        <div class="sub_menu bind_menu_a" id="layer1" data-layerid="layer1" style="display:none">
+                            <i></i>
+                            <div class="sub_area clearfix">
+                                <ul class="sub_nav list">
+                                        
+                                    <li class="li_2018" ><a href="">NEX旗舰版</a></li>
+                                    <li class="li_2018"><a href="">NEX&NEX屏幕指纹版</a></li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+                        <div class="sub_menu bind_menu_a" id="layer2" data-layerid="layer2" style="display:none">
+                            <i></i>
+                            <div class="sub_area clearfix">
+                                <ul class="sub_nav list">
+                                 
+                                </ul>
+                                <ul class="sub_nav list">
+                                    <li class="li_2018"><a href="">X23</a></li>
+                                    <li class="li_2018"><a href="">X21&X21屏幕指纹版</a></li>
+                                    <li class="li_2018"><a href="">X21 FIFA世界杯非凡版</a></li>
+                                    <li class="li_2018"><a href="">X21i</a></li>
+                                </ul>
+                                <ul class="sub_nav list sub_ad">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sub_menu bind_menu_a" id="layer3" data-layerid="layer3" style="display:none" >
+                            <i></i>
+                            <div class="sub_area clearfix">
+                                <ul class="sub_nav list">
+                                    
+                                </ul>
+                                <ul class="sub_nav list">
+                                    
+                                </ul>
+                                <ul class="sub_nav list">
+                                    <li class="li_2018"><a href="">Z3i</a></li>
+                                    <li class="li_2018"><a href="">Z1</a></li>
+                                    <li class="li_2018"><a href="">Z1i</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sub_menu bind_menu_a" id="layer4" data-layerid="layer4" style="display:none">
+                            <i></i>
+                            <div class="sub_area clearfix">
+                                <ul class="sub_nav list">
+                                    
+                                </ul>
+                                <ul class="sub_nav list">
+                                    
+                                </ul>
+                                <ul class="sub_nav list">
+                                    
+                                </ul>
+                                <ul class="sub_nav list">
+                                    <li class="li_2018"><a href="">Y97</a></li>
+                                    <li class="li_2018"><a href="">Y85</a></li>
+                                    <li class="li_2018"><a href="">Y83</a></li>
+                                    <li class="li_2018"><a href="">Y81s</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <section class="cartMain">
 		<table class="main-title-module">
                 <tbody>
                     <tr>

@@ -15,10 +15,14 @@ ul {
 .tab .box {
     /* width: 1200px; */
     width: 950px;
-    position: relative;
+    /* position: relative; */
     margin: 0 auto;
     /* background: #cccccc; */
-    height: 522px;
+    /* height: 522px; */
+    height: 503px;
+    position: absolute;
+    margin-top: -528px;
+    z-index: 2;
 }
 .tab .box .menus {
     width: 200px;
@@ -30,6 +34,9 @@ ul {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    /* position: absolute; */
+    /* margin-top: -513px; */
+    /* z-index: 1; */
 }
 .tab .box .menus li {
     width: 200px;

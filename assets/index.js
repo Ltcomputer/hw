@@ -11,12 +11,12 @@ $('.tab .menus li').each(function(){
                 // 'assets/bg5.png',
                 // 'assets/bg6.png',
                 // 'assets/bg7.png',
-            ] // 背景图片  不需要注释即可
+            ] // 背景图片  
         // $('.tab .scroll').css('margin-top',-index*800+'px');
         $('.tab .scroll').css('margin-top',-index*484+'px');
         $('.category-box').css('display','block');
         // $('.tab .menus li').css('width','1200px');
-        // $('.tab').css('background-image','url('+arr[index]+')')// 背景图片  不需要注释即可
+        // $('.tab').css('background-image','url('+arr[index]+')')// 背景图片  
         
     })
     
@@ -29,9 +29,9 @@ $('.tab .menus li').each(function(){
         // $(this).addClass('bg');
         // var index = $(this).index();
       
-        $('.tab .menus li').css('width','1200px');
+        // $('.tab .menus li').css('width','1200px');
         // $('.right').css('opacity','0');
-        $('.category-box').css('display','none');
+        // $('.category-box').css('display','none');
        
     })
 

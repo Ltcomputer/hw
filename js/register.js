@@ -50,7 +50,6 @@ var register = (function(){
         },
         loginSuccess: function(data) {
             if(data.code == 200) {
-               
                 location.href = 'log.html';
             } else {
                 alert(data.msg);
