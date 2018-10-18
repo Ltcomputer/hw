@@ -1,0 +1,1 @@
+"use strict";$(".tab .menus li").each(function(){$(".tab .menus li").mouseover(function(){$(".tab .menus li").removeClass("bg"),$(this).addClass("bg");var s=$(this).index();$(".tab .scroll").css("margin-top",484*-s+"px"),$(".category-box").css("display","block")}),$(".box").on("mouseleave",function(){$(".category-box").css("display","none")})});

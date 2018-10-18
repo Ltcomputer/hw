@@ -1,0 +1,1 @@
+"use strict";function showHideLayer(i,n){"show"==n?$("#"+i).show():$("#"+i).hide()}function init_nav(){$(".bind_menu_a").bind({mouseover:function(){showHideLayer($(this).data("layerid"),"show")},mouseout:function(){showHideLayer($(this).data("layerid"),"hide")}})}$(function(){init_nav()});
